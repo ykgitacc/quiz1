@@ -1,0 +1,37 @@
+1) WAQ to display employees name ending with letter 'n'?
+		
+		select first_name
+		from employees
+		where first_name like 'n%';
+
+
+
+2) WAQ to display employees record who joined in December month?
+		
+		select *
+		from employees
+		where to_char (hire_date,'mon')='dec';
+
+
+
+3) WAQ to display emplyoees record who doesn't have any manager?
+
+		select *
+		from employees
+		where manager_id is null;
+
+
+
+4) WAQ to display employees record with bonus, bonus will be salary+commission?
+
+		select *
+		from employees
+		where salary(salary+500) bonus;
+
+
+
+5) WAQ to display whose salary is between 5000 and 10000?
+
+		select *
+		from employees
+		where salary between 500 and 10000;
